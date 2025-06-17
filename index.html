@@ -14,7 +14,6 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      position: relative;
     }
     .bio-card {
       background: #1c1c1c;
@@ -59,18 +58,12 @@
     li {
       padding: 3px 0;
     }
-    audio {
-      width: 100%;
-      margin-top: 20px;
-    }
-
   </style>
 </head>
 <body>
-
   <div class="bio-card">
     <center>
-      <img src="avatar.png" alt="winclearsky avatar" class="avatar">
+      <img src="96b0e511-e418-4589-8c96-36f7a4ddddf9.png" alt="winclearsky avatar" class="avatar">
       <h1>winclearsky</h1>
       <div class="subtitle">aka Илья | 13 y.o. | Russia</div>
     </center>
@@ -103,29 +96,6 @@
         <li>Squad: <a href="https://dsc.gg/wlnmc" class="link">dsc.gg/wlnmc</a></li>
       </ul>
     </div>
-
-    <audio controls autoplay loop>
-      <source src="sound.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
   </div>
-
-  <div id="trail"></div>
-
-  <script>
-    const trail = document.getElementById("trail");
-    let hideTimeout;
-
-    document.addEventListener("mousemove", (e) => {
-      trail.style.left = `${e.pageX}px`;
-      trail.style.top = `${e.pageY}px`;
-      trail.style.opacity = 1;
-
-      clearTimeout(hideTimeout);
-      hideTimeout = setTimeout(() => {
-        trail.style.opacity = 0;
-      }, 1000);
-    });
-  </script>
 </body>
 </html>
